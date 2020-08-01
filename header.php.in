@@ -1,0 +1,10 @@
+<?php
+/**
+ * Plugin Name:   Giving Grid Widget Plugin
+ * Plugin URI:    https://rightclickdesign.co
+ * Description:   Adds a widget for Giving Grid (https://www.givinggrid.com/)
+ * Version:       @PROJECT_VERSION@
+ * Author:        Right Click Design, LLC
+ * Author URI:    https://rightclickdesign.co
+ */
+?>

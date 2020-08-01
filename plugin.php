@@ -1,12 +1,4 @@
 <?php
-/**
- * Plugin Name:   Giving Grid Widget Plugin
- * Plugin URI:    https://rightclickdesign.co
- * Description:   Adds a widget for Giving Grid (https://www.givinggrid.com/)
- * Version:       1.0.1
- * Author:        Right Click Design, LLC
- * Author URI:    https://rightclickdesign.co
- */
 
 class Givinggrid_Widget extends WP_Widget {
 
@@ -28,7 +20,6 @@ class Givinggrid_Widget extends WP_Widget {
     <?php echo $args['after_widget'];
   }
 
-  
   public function form( $instance ) {
     $title = ! empty( $instance['title'] ) ? $instance['title'] : '';
     $givinggrid_id = ! empty( $instance['givinggrid_id'] ) ? $instance['givinggrid_id'] : ''; ?>
@@ -59,7 +50,7 @@ function gg_widget_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'gg_widget_enqueue_scripts' );
 
-function register_givinggrid_widget() { 
+function register_givinggrid_widget() {
   register_widget( 'Givinggrid_Widget' );
 }
 add_action( 'widgets_init', 'register_givinggrid_widget' );
