@@ -54,8 +54,7 @@ class Givinggrid_Widget extends WP_Widget {
 
 function gg_widget_enqueue_scripts() {
 
-    // wp_register_script( 'givinggrid-js', plugins_url( 'js/givinggrid.js', __FILE__ ), array(), null, true );
-    wp_register_script( 'givinggrid-js', '//www.givinggrid.com/g/gin.js', array(), null, true );
+    wp_register_script( 'givinggrid-js', 'https://www.givinggrid.com/g/gin.js', array(), null, true );
     wp_enqueue_script( 'givinggrid-js' );
 }
 add_action( 'wp_enqueue_scripts', 'gg_widget_enqueue_scripts' );
